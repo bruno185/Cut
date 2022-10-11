@@ -4,6 +4,8 @@
 *                                        *
 *        adapté pour merlin 32           *
 ******************************************
+*            MODIF 2022                  *
+******************************************
 *
 ch        equ $24
 cv        equ $25
@@ -48,8 +50,10 @@ cut       lda #$11
 
 
 * modification 2022
-* Objectif 1 : éviter une erreur E/S si on lance CUT depuis un drive différent de S6D1.
-* Le principe : on obtient le prefix à partir de slot et drive par défaut ($be3c/$be3d)
+* Objectif 1 : éviter une erreur E/S si on lance CUT 
+* depuis un drive différent de S6D1.
+* Le principe : on obtient le prefix à partir de slot et drive 
+* par défaut ($be3c/$be3d)
 * (et non pas en imposant S6D1).
 * Objectif 2 : save / restore prompt char.
 
