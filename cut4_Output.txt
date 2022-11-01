@@ -72,7 +72,7 @@
    69 |  1 cut4.s     69 | Code        | 11 |         |    2 | 00/4032 : 80 0E       |             bra   men            
    70 |  1 cut4.s     70 | Empty       | 11 |         |    0 | 00/4034               | suitegp                          
    71 |  1 cut4.s     71 | Code        | 11 |         |    3 | 00/4034 : AD 4F 4A    |             lda   path           ; 1er car. = long.
-   72 |  1 cut4.s     72 | Code        | 11 |         |    2 | 00/4037 : F0 03       |             beq   noprefix       ; pas de prefix (log. = 0) goto noprefix
+   72 |  1 cut4.s     72 | Code        | 11 |         |    2 | 00/4037 : F0 03       |             beq   noprefix       ; pas de prefix (long. = 0) : goto noprefix
    73 |  1 cut4.s     73 | Code        | 11 |         |    3 | 00/4039 : 4C 7E 40    |             jmp   good1          ; sinon : affichage
    74 |  1 cut4.s     74 | Empty       | 11 |         |    0 | 00/403C               |                                  
    75 |  1 cut4.s     75 | Empty       | 11 |         |    0 | 00/403C               | noprefix                         

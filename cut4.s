@@ -69,7 +69,7 @@ cut       lda #$11
           bra men
 suitegp
           lda path          ; 1er car. = long.
-          beq noprefix      ; pas de prefix (log. = 0) goto noprefix 
+          beq noprefix      ; pas de prefix (long. = 0) : goto noprefix 
           jmp good1         ; sinon : affichage 
 
 noprefix
